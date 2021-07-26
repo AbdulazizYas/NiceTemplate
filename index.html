@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/normlize.css">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Document</title>
+</head>
+<body>
+  <section class="header">
+
+      <a href="#" class="logo"><h1>AbdulazizYas </h1></a>
+
+      <div class="toggle" id="toggle">
+
+        <span></span>
+        <span></span>
+        <span></span>
+
+      </div>
+
+  </section>
+  <script>
+    const tgl = document.getElementById('toggle');
+    clicked = false;
+    tgl.addEventListener('click', () =>{
+      if(!clicked){
+        tgl.classList.remove('x');
+        tgl.classList.add('x');
+        clicked = true
+      } else{
+        tgl.classList.remove('x');
+      }
+      
+    })
+    
+  </script>
+
+  <section class="banner">
+    <img src="imgs/01.jpg" alt="banner" class="fit">
+    <div class="content">
+      <h2>Travel AnyWhere</h2>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore quasi quaerat modi dolore repellat dolor, voluptate iste veritatis reiciendis id, excepturi corrupti delectus, nemo optio. Fuga beatae vel consequatur reiciendis.</p>
+      <a href="#" class="btn" role="button">Learn More</a>
+    </div>
+  </section>
+
+  <section class="about">
+    <div class="contentBx">
+      <h2 class="title">Feel The Beauty of the World</h2>
+      <p class="text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quisquam iure vel porro voluptate reiciendis doloremque voluptas? Quaerat, animi! Provident rem consequuntur alias architecto tenetur aliquam repellendus et veniam iste? Ad? <br><br>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Atque veritatis, dicta voluptas libero laboriosam, omnis corpori</p>
+      <a href="#" class="btn" role="button">Popular Destination</a>
+    </div>
+    <div class="imgBx">
+      <img src="imgs/02.jpg" alt="banner" class="fit">
+    </div>
+  </section>
+
+  <section class="banner2">
+    <img src="imgs/03.jpg" alt="" class="fit">
+  </section>
+
+  <section class="dest">
+    <div class="content">
+      <h2 class="title">
+        Most Popular Travel Destinations
+      </h2>
+      <p class="text">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam atque tenetur vitae cupiditate nesciunt tempore laborum aliquam consequuntur minima officia! Mollitia deserunt deleniti in nam aliquid aliquam quidem rem sed?
+      </p>
+    </div>
+  </section>
+  <script src="js/script.js"></script>
+</body>
+</html>
